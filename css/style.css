@@ -2,8 +2,9 @@
 :root{
 
   --primary-color: #FDC886;
+  --primary-color-hover: #e4b173;
   --second-color: #5A4FCF;
-  --title-color: #232631;
+  --title-color: #424242;
   --border-radius: 12px;
 
 }
@@ -142,4 +143,330 @@ html, body {
 
 .input-group-button button i {
   color: #858585;
+}
+
+
+
+
+/* Jumbotron */
+
+.slide {
+  width:100%;
+  /*border:1px solid white;*/
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  /* will-change: transform; */
+  position: relative;
+}
+
+.slide.active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+    
+}
+
+.slider {
+  position: relative;
+   width: 80%;
+   display: inline-flex;
+}
+
+.slider-1 {
+    margin-left: 100px;
+}
+
+
+
+.slider .description {
+    padding: 25px 30px;
+    border-radius: 15px;
+    min-width: calc(350px - 1vw);
+    background-color: white;
+    position: absolute;
+    top: 50%;
+   
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.star i {
+  color: #FFB800;
+}
+
+
+.restaurant-title {
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--title-color);
+}
+
+.restaurant-price {
+  font-weight: 600;
+  font-size: 18px;
+  color: #656565;
+}
+
+.restaurant-location {
+  font-weight: 400;
+  font-size: 16px;
+  color: #656565;
+}
+
+.restaurant-location i {
+  margin-right: 4px;
+}
+
+.primary-color {
+  background-color: var(--primary-color);
+  color: var(--title-color);
+}
+
+.primary-color:hover {
+  background-color: var(--primary-color-hover);
+  color: var(--title-text-color);
+}
+
+.description a.btn.btn-primary {
+  margin: 18px 0 5px;
+}
+
+span.info {
+  display: block;
+  font-size: 16px;
+  color: #656565;
+  font-weight: 300;
+}
+span.info i {
+  margin-right: 4px;
+}
+
+.slider .image {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.slider .image img {
+  width: 100%;
+}
+
+
+/* Benefit Section */
+
+section.benefit{
+
+  padding: 100px 0;
+}
+
+.benefit-text {
+  text-align: center;
+}
+
+.benefit-text h4 {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--second-color);
+  text-transform: uppercase;
+}
+
+.benefit-text h2 {
+  font-weight: 600;
+  font-size: 28px;
+  color: var(--title-color);
+}
+
+.benefit-row {
+  margin-top: 50px;
+}
+
+.benefit-card {
+  position: relative;
+  padding: 24px 24px 80px;
+  background-color: white;
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   overflow: hidden;
+}
+.benefit-card .image {
+  margin-bottom: 15px;
+}
+
+.benefit-info {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.benefit-info .benefit-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--title-color);
+  margin-bottom: 5px;
+
+}
+
+.benefit-info .benefit-description{
+  font-size: 16px;
+  font-weight: 400;
+  color: #656565;
+}
+
+
+.detail-button {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: 0;
+  color: var(--title-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
+}
+
+.detail-button:hover {
+  background-color: var(--primary-color-hover);
+  color: var(--title-color);
+}
+
+
+
+
+/* featured Section */
+
+
+.featured-text h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color:var(--second-color);
+  text-transform: uppercase;
+}
+
+.featured-text h2 {
+  font-size:28px;
+  font-weight: 600;
+  color: var(--title-color);
+}
+.featured-text p {
+  margin-bottom: 40px;
+}
+
+.featured-image {
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+  overflow: hidden;
+  position: relative;
+}
+
+.featured-img {
+  position: relative;
+}
+.featured-image .featured-img img {
+    width: 100%;
+    object-fit: cover;
+    min-height: 366px;
+}
+
+
+.featured-info {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transition: .6s ease;
+  -webkit-transition: .6s ease;
+  -moz-transition: .6s ease;
+  -ms-transition: .6s ease;
+  -o-transition: .6s ease;
+}
+
+.featured-image:hover .featured-info {
+  opacity: 1;
+  visibility: visible;
+  background-color: white;
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+  width: calc(100% - 30px);
+  padding: 15px;
+  display: block;
+  margin: 0 auto;
+  bottom: 12px;
+  transition: .6s ease-out ;
+  -webkit-transition: .6s ease-out ;
+  -moz-transition: .6s ease-out ;
+  -ms-transition: .6s ease-out ;
+  -o-transition: .6s ease-out ;
+}
+
+.featured-left .star {
+
+  display: flex;
+}
+
+.featured-left .star span {
+  color: #FFB800;
+}
+
+.featured-title {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--title-color);
+}
+
+.featured-location {
+  color: #858585;
+}
+.featured-location i {
+  margin-right: 4px;
+}
+
+
+div.featured-card {
+  
+    width: 33.3333%; 
+}
+.featured-card:not(:hover) {
+   width: 25%;
+}
+
+.featured-card:hover,.featured-card.width-25:hover {
+    width: 50% !important;
+}
+
+.featured-card.width-25:hover + *, .featured-card.width-25 + .featured-card:last-child {
+   width: 25% !important;
 }
