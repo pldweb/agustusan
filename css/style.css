@@ -358,6 +358,10 @@ section.benefit{
 /* featured Section */
 
 
+section.featured {
+  padding: 100px 0;
+}
+
 .featured-text h4 {
   font-size: 16px;
   font-weight: 600;
@@ -457,16 +461,27 @@ section.benefit{
 
 div.featured-card {
   
-    width: 33.3333%; 
+    width: 25%; 
+}
+
+div.featured-card:first-child {
+  flex-grow: 12;
 }
 .featured-card:not(:hover) {
-   width: 25%;
+  width: 25%;
+  flex-grow: 2;
+  transform: .4s ease;
+  -webkit-transform: .4s ease;
+  -moz-transform: .4s ease;
+  -ms-transform: .4s ease;
+  -o-transform: .4s ease;
 }
 
 .featured-card:hover,.featured-card.width-25:hover {
     width: 50% !important;
-}
-
-.featured-card.width-25:hover + *, .featured-card.width-25 + .featured-card:last-child {
-   width: 25% !important;
+    transform: .4s ease ;
+    -webkit-transform: .4s ease ;
+    -moz-transform: .4s ease ;
+    -ms-transform: .4s ease ;
+    -o-transform: .4s ease ;
 }
