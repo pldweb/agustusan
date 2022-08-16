@@ -496,12 +496,9 @@ div.featured-card:first-child {
   -moz-transition: .4s ease;
   -ms-transition: .4s ease;
   -o-transition: .4s ease;
-
-  transition: .5s ease;
 }
 
 .featured-card:hover,.featured-card.width-25:hover {
-  transition: .5s ease;
     width: 50% !important;
     transform: .4s ease ;
     -webkit-transform: .4s ease ;
