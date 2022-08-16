@@ -395,6 +395,7 @@ section.featured {
     width: 100%;
     object-fit: cover;
     min-height: 366px;
+    max-height: 367px;
 }
 
 
@@ -475,9 +476,11 @@ div.featured-card:first-child {
   -moz-transform: .4s ease;
   -ms-transform: .4s ease;
   -o-transform: .4s ease;
+  transition: .5s ease;
 }
 
 .featured-card:hover,.featured-card.width-25:hover {
+  transition: .5s ease;
     width: 50% !important;
     transform: .4s ease ;
     -webkit-transform: .4s ease ;
