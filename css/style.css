@@ -310,6 +310,7 @@ section.benefit{
 }
 .benefit-card .image {
   margin-bottom: 15px;
+  height: 50px;
 }
 
 .benefit-info {
@@ -387,6 +388,7 @@ section.featured {
 }
 .featured-text p {
   margin-bottom: 40px;
+  color: #656565;
 }
 
 .featured-image {
@@ -489,15 +491,13 @@ div.featured-card:first-child {
   -moz-transform: .4s ease;
   -ms-transform: .4s ease;
   -o-transform: .4s ease;
-<<<<<<< HEAD
   transition: .4s ease;
   -webkit-transition: .4s ease;
   -moz-transition: .4s ease;
   -ms-transition: .4s ease;
   -o-transition: .4s ease;
-=======
+
   transition: .5s ease;
->>>>>>> 5e0671b9ddf2a08db81df2f605e6bf608e9b84a3
 }
 
 .featured-card:hover,.featured-card.width-25:hover {
