@@ -489,14 +489,19 @@ div.featured-card:first-child {
   -moz-transform: .4s ease;
   -ms-transform: .4s ease;
   -o-transform: .4s ease;
+<<<<<<< HEAD
   transition: .4s ease;
   -webkit-transition: .4s ease;
   -moz-transition: .4s ease;
   -ms-transition: .4s ease;
   -o-transition: .4s ease;
+=======
+  transition: .5s ease;
+>>>>>>> 5e0671b9ddf2a08db81df2f605e6bf608e9b84a3
 }
 
 .featured-card:hover,.featured-card.width-25:hover {
+  transition: .5s ease;
     width: 50% !important;
     transform: .4s ease ;
     -webkit-transform: .4s ease ;
