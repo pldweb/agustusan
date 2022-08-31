@@ -308,6 +308,7 @@ section.benefit{
 }
 .benefit-card .image {
   margin-bottom: 15px;
+  height: 49px;
 }
 
 .benefit-info {
@@ -488,3 +489,24 @@ div.featured-card:first-child {
     -ms-transform: .4s ease ;
     -o-transform: .4s ease ;
 }
+
+
+
+
+section.city  {
+  padding: 100px 0;
+}
+
+.city-text h4 {
+  font-size: 16px;
+  color: var(--second-color);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.city-text h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--title-text-color);
+}
+
